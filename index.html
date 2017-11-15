@@ -18,18 +18,20 @@
 			<input type="text" id="search" ng-model="findItem" 
 			placeholder=" Filter your to-dos">
 				<ol>
-					<li ng-repeat="item in form.itemList | filter: findItem">
+					<li ng-repeat="item in form.itemList | filter: findItem" task-directive>
 					{{ item }}
 						<i ng-click="form.removeItem()" class="material-icons">&#xE5CD;</i>
 					</li>
 				</ol>
 			<input id="adding" type="text" ng-model="form.add" 
 			placeholder=" add your to-do">
-		<button ng-click="form.addItem(form.add)">Add</button>
+		<button ng-click="form.addItem(form.add)" click-directive>Add</button>
 	</div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
 <script src="javascript/module.js"></script>
+<script src="javascript/click-directive.js"></script>
 <script src="javascript/controller.js"></script>
+<script src="javascript/task-directive.js"></script>
 </body>
 </html>
