@@ -54,7 +54,7 @@ button:hover{
 ol {
 	display: inline-grid;
 	grid-template-rows: 50%;
-	margin-left: -5px;
+	margin-left: -15px;
 	width: 90%;
 }
 li {
@@ -84,7 +84,9 @@ h1 {
 input, li, ol {
 	font-size: 18px;
 }
-
+ol {
+	margin-left: -10px;
+}
 
 }
 
