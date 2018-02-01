@@ -6,7 +6,7 @@
 		template: `<ol>
 					<li ng-repeat="item in $ctrl.itemList | filter: $ctrl.findItem" task-directive>
 					{{ item }}
-						<i ng-click="$ctrl.removeItem()" class="material-icons">&#xE5CD;</i>
+						<i ng-click="$ctrl.removeItem(this.$index)" class="material-icons">&#xE5CD;</i>
 					</li>
 				</ol>`,
 		controller: "FormController"
